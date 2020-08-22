@@ -1,11 +1,11 @@
 let input;
 let total = 0;
-// console.log(input);
 
 input = prompt("Write a number");
+
 while (input) {
   let value = Number(input);
-  if (isNaN(value)) {
+  if (isNaN(input)) {
     window.alert(`Было введено не число, попробуйте еще раз`);
     input = prompt("Write a number");
   } else {
@@ -14,3 +14,15 @@ while (input) {
   }
 }
 window.alert(`Общая сумма чисел равна ${total}`);
+
+// do {
+//     input = prompt("Write a number");
+//     if (isNaN(input)) {
+//         window.alert(`Было введено не число, попробуйте еще раз`);
+//     }
+//     else {
+//     total += Number(input);
+//     input = prompt("Write a number");
+//   }
+// }
+// while()
